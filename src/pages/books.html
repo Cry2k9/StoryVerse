@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryVerse</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/public/favicon.png" type="png">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../assets/styles/books.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h2>StoryVerse</h2>
+            </div>
+
+            <div class="navmenu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="">Books</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="../src/pages/loginRegister.html">Login / Register</a></li>
+                </ul>
+
+                <div class="search-box">
+                    <input type="search" class="search" placeholder="Search hear...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-section">
+            <h2 class="section-title">Our <span>Products</span></h2>
+            <div class="product-grid">
+                <a href="details/alchemist.html" class="product-card">
+                    <img src="../assets/images/b1.jpg" alt="The Alchemist">
+                    <h3>The Alchemist</h3>
+                    <p class="price">Rs.290 <span class="old-price">Rs.884</span></p>
+                </a>
+                <a href="details/letuscpp.html" class="product-card">
+                    <img src="../assets/images/b2.jpg" alt="The Alchemist">
+                    <h3>Let Us C++</h3>
+                    <p class="price">Rs.360 <span class="old-price">Rs.470</span></p>
+                </a>
+                <a href="details/python.html" class="product-card">
+                    <img src="../assets/images/b3.jpg" alt="The Alchemist">
+                    <h3>Python for Everybody</h3>
+                    <p class="price">Rs.500 <span class="old-price">Rs.800</span></p>
+                </a>
+                <a href="details/wingsoffire.html" class="product-card">
+                    <img src="../assets/images/b4.jpg" alt="The Alchemist">
+                    <h3>Wings of Fire</h3>
+                    <p class="price">Rs.130 <span class="old-price">Rs.270</span></p>
+                </a>
+                <a href="details/advanceddata.html" class="product-card">
+                    <img src="../assets/images/b5.jpg" alt="The Alchemist">
+                    <h3>Advanced Data Struc...</h3>
+                    <p class="price">Rs.345 <span class="old-price">Rs.400</span></p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="">
+        const email = localStorage.getItem("userEmail");
+
+        if (email !== "admin@example.com") {
+            // Nếu không phải admin thì chuyển về trang người dùng
+            window.location.href = "/public/index.html";
+        }
+    </script>
+</body>
+
+</html>
