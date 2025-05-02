@@ -7,20 +7,20 @@
     <title>StoryVerse</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="./favicon.png" type="png">
+    <link rel="icon" href="./public/favicon.png" type="png">
 
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Css -->
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./public/styles.css">
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <div class="logo">
-                <h2>StoryVerse</h2>
+                <h2>Story</h2>
             </div>
 
             <div class="navmenu">
@@ -31,7 +31,7 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#blog">Blog</a></li>
                     <li><a href="#contact">Contact Us</a></li>
-                    <li><a href="../src/pages/loginRegister.html">Login / Register</a></li>
+                    <li><a href="./src/pages/loginRegister.html">Login / Register</a></li>
                 </ul>
 
                 <div class="search-box">
@@ -56,7 +56,7 @@
                 <a href="" class="btn">Reading More</a>
             </div>
 
-            <img src="../src/assets/images/slider-img.png" alt="">
+            <img src="./src/assets/images/slider-img.png" alt="">
         </div>
     </header>
 
@@ -66,14 +66,14 @@
         <div class="cat-row">
             <div class="cat-header">
                 <h2>Books Categories</h2>
-                <a href="../src/pages/categories.html" class="btn-category">Go to Categories</a>
+                <a href="./src/pages/categories.html" class="btn-category">Go to Categories</a>
                 <p style="font-size: 20px;">A book is a gift you can open again and again</p>
             </div>
 
             <div class="cat-books">
                 <div class="books">
                     <div class="book-img">
-                        <img src="../src/assets/images/astronomy.png" alt="">
+                        <img src="./src/assets/images/astronomy.png" alt="">
                     </div>
                     <h4>Astronomy</h4>
                     <p>"They say home is where heart is. Mine is among the stars, across the universe."</p>
@@ -81,7 +81,7 @@
 
                 <div class="books">
                     <div class="book-img">
-                        <img src="../src/assets/images/biology.png" alt="">
+                        <img src="./src/assets/images/biology.png" alt="">
                     </div>
                     <h4>Biology</h4>
                     <p>"Nothing in biology makes sense except in the light of evolution."</p>
@@ -89,7 +89,7 @@
 
                 <div class="books">
                     <div class="book-img">
-                        <img src="../src/assets/images/chemistry.png" alt="">
+                        <img src="./src/assets/images/chemistry.png" alt="">
                     </div>
                     <h4>Chemistry</h4>
                     <p>"Chemistry states the more energy put into a bond, the harder it is to break."</p>
@@ -97,7 +97,7 @@
 
                 <div class="books">
                     <div class="book-img">
-                        <img src="../src/assets/images/computer-science.png" alt="">
+                        <img src="./src/assets/images/computer-science.png" alt="">
                     </div>
                     <h4>Computer Science</h4>
                     <p>"Computer science is the operating system for all innovation."</p>
@@ -105,7 +105,7 @@
 
                 <div class="books">
                     <div class="book-img">
-                        <img src="../src/assets/images/literature.png" alt="">
+                        <img src="./src/assets/images/literature.png" alt="">
                     </div>
                     <h4>Literature</h4>
                     <p>"The greatest secrets are always hidden in the most likely places."</p>
@@ -113,7 +113,7 @@
 
                 <div class="books">
                     <div class="book-img">
-                        <img src="../src/assets/images/physics.png" alt="">
+                        <img src="./src/assets/images/physics.png" alt="">
                     </div>
                     <h4>Physics</h4>
                     <p>"A rainbow is the product of physics working for your appreciation of beauty."</p>
@@ -125,7 +125,7 @@
 
     <section id="about">
         <div class="set-row">
-            <img src="../src/assets/images/about-img.png" alt="">
+            <img src="./src/assets/images/about-img.png" alt="">
 
             <div class="about-content">
                 <h2>About Our Bookstore</h2>
@@ -144,7 +144,7 @@
         <h2 class="blog-header">Form Our Blog</h2>
         <div class="set-row">
             <div class="col">
-                <img src="../src/assets/images/blog1.jpg" alt="">
+                <img src="./src/assets/images/blog1.jpg" alt="">
                 <h4>Lorem ipsum dolor sit amet consectetur</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus veniam non quas perferendis
                     ipsum voluptates odit officiis magnam natus, possimus dolore tempore suscipit enim commodi
@@ -192,14 +192,7 @@
         </div>
     </div>
 
-    <script src="./script.js">
-        const email = localStorage.getItem("userEmail");
-
-        if (email !== "admin@example.com") {
-            // Nếu không phải admin thì chuyển về trang người dùng
-            window.location.href = "/public/index.html";
-        }
-    </script>
+    <script src="./public/script.js"></script>
 </body>
 
 </html>
